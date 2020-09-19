@@ -21,8 +21,6 @@ float aspect = width/height;
 float zNear = 5;
 float zFar = 10000;
 
-float rot = 0;
-
 void setup() {
   size(800, 800, P3D);
   jr = new JoonsRenderer(this);
@@ -85,10 +83,8 @@ void draw() {
 
   pushMatrix();
   translate(0, 0, 0);
-  float rot = map(mouseX, 0, width, 0, 360);
   rotateZ(radians(90));
   rotateX(radians(90));
-  println(rot);
   translate(-50, 10, 0);
   scale(3);
   panda.draw();
