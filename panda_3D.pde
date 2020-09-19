@@ -70,7 +70,7 @@ void draw() {
   vertex(w, w, -30);
   endShape();
 
-  //Random Spheres.
+  //Random Boxes.
   pushMatrix();
   rotateZ(radians(rot));
   jr.fill("diffuse", 255, 255, 255); 
